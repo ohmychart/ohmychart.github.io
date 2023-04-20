@@ -1,0 +1,38 @@
+:root {
+    --color-background: #1F1F1F;
+    --color-white-primary: #E3E3E3;
+    --color-dark-secondary: #2D2F31;
+    --transition-nav: all 0.75s cubic-bezier(0.45, 0, 0.55, 1);
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    scrollbar-color: var(--color-dark-secondary) var(--color-background);
+    scrollbar-width: auto;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--color-dark-secondary);
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-white-primary);
+    font-family: "Century Gothic", sans-serif;
+    font-size: 2rem;
+}

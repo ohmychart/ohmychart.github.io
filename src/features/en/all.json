@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Sports leagues business",
+        "slug": "sports-leagues-business",
+        "color": "#013D72",
+        "desc": "",
+        "tags": ["Sports", "Business"],
+        "isStatic": true
+    },
+
+    {
+        "title": "Energy resources and state fragility",
+        "slug": "energy-resources-and-state-fragility",
+        "color": "#00796A",
+        "desc": "",
+        "tags": ["Energy", "Economy"],
+        "isStatic": true
+    }
+]
