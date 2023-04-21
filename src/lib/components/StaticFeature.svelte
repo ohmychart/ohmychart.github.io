@@ -3,7 +3,7 @@
 
     export let color;
     export let slug;
-    export let alt="Visualization image";
+    export let desc="Visualization image";
 
     const src = `/features/${$SettingsStore.lang}/${slug}/viz.jpg`;
 </script>
@@ -12,7 +12,7 @@
     <!-- <div class="placeholder" style="background: {color}; box-shadow: 0px 0px 90px 5px {color};">
         
     </div> -->
-    <img class="feature-viz" {src} {alt} loading="lazy" style="box-shadow: 0px 0px 55px 5px {color};"/>
+    <img class="feature-viz" {src} alt={desc} loading="lazy" style="box-shadow: 0px 0px 55px 5px {color};"/>
 </article>
 
 <style>

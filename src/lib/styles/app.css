@@ -35,4 +35,13 @@ body {
     color: var(--color-white-primary);
     font-family: "Century Gothic", sans-serif;
     font-size: 2rem;
+
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
