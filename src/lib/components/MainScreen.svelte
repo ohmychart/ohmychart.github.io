@@ -18,12 +18,12 @@
 
 <style>
 	.main-screen {
-		padding-top: 5.6rem;
-		padding-bottom: 5.6rem;
+		padding-top: var(--main-screen-padding);
+		padding-bottom: var(--main-screen-padding);
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		row-gap: 10rem;
+		row-gap: var(--main-screen-row-gap);
 		transition: var(--transition-nav);
 	}
 

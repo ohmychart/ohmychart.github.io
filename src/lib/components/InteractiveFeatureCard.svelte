@@ -23,16 +23,19 @@
 			<div class="description">{desc}</div>
             <div class="external-icon">{@html externalIcon}</div>
 		</div>
+		<div class="description-mobile">
+			{desc}
+		</div>
 	</a>
 </article>
 
 <style>
     
 	.card-container {
-		padding-left: 3.6rem;
-		padding-right: 3.6rem;
-		padding-top: 8%;
-		padding-bottom: 16%;
+		padding-left: var(--feature-card-padding-side);
+		padding-right: var(--feature-card-padding-side);
+		padding-top: var(--feature-card-padding-top);
+		padding-bottom: var(--feature-card-padding-bottom);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
@@ -43,15 +46,24 @@
 	}
 
 	.title {
-		font-size: 7.2rem;
+		font-size: var(--feature-title-text-size);
 		line-height: 100%;
 	}
 
 	.description {
-		font-size: 2rem;
-		line-height: 130%;
-		margin-top: 3.2rem;
-		max-width: 82%;
+		font-size: var(--feature-desc-text-size);
+		line-height: var(--feature-desc-line-height);
+		margin-top: var(--feature-title-gap);
+		max-width: var(--feature-desc-text-width);
+		display: var(--feature-display);
+	}
+
+	.description-mobile {
+		display: var(--feature-display-mobile);
+		font-size: var(--feature-desc-text-size);
+		line-height: var(--feature-desc-line-height);
+		margin-top: var(--feature-title-gap);
+		max-width: var(--feature-desc-text-width);
 	}
 
     a:hover .card-container .title {
@@ -60,11 +72,11 @@
 
     .external-icon {
         position: absolute;
-        top: 3.2rem;
-        right: 3.6rem;
+        top: var(--feature-external-icon-top);
+        right: var(--feature-external-icon-right);;
         display: inline-block;
-        width: 32px;
-        height: 32px;
+        width: var(--feature-external-icon-size);
+        height: var(--feature-external-icon-size);
         fill: var(--color-dark-secondary);
     }
 

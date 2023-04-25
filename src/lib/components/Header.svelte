@@ -35,6 +35,7 @@
 
 	.lang-switch {
 		opacity: 1;
+		width: var(--lang-switch-size);
 	}
 
 	.lang-switch:hover {

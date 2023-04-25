@@ -7,7 +7,7 @@
 <section class="features-feed">
 	{#each features as feature}
 		{#if feature.isStatic}
-			<StaticFeature slug={feature.slug} color={feature.color} />
+			<StaticFeature slug={feature.slug} --ambi-color="{feature.color}"/>
 		{:else}
 			<InteractiveFeatureCard title={feature.title} desc={feature.desc} slug={feature.slug} url={feature.url} color={feature.color}/>
 		{/if}
@@ -19,6 +19,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		row-gap: 10rem;
+		row-gap: var(--main-screen-row-gap);
 	}
 </style>

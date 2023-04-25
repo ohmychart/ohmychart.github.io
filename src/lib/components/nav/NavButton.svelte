@@ -15,26 +15,19 @@
 
 <style>
 	button {
-		width: 80px;
-		height: 80px;
-		border-radius: 20px;
+		width: var(--nav-button-size);
+		height: var(--nav-button-size);
+		padding: 24px 16px;
+		border-radius: var(--nav-button-radius);
 		border: none;
 		background-color: var(--color-dark-secondary);
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		position: fixed;
-		bottom: 44px;
-		left: calc(50vw + 644px);
+		bottom: var(--nav-button-bottom);
+		left: var(--nav-button-left);
 		z-index: 2;
-	}
-
-	@media (max-width: 1500px) {
-		button {
-			left: auto;
-			left: calc(100vw - 112px);
-			bottom: 12px;
-		}
 	}
 
 	button:hover {
@@ -45,6 +38,7 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		width: 100%;
 	}
 
 	button:hover .nav-button-icon {

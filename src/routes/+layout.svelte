@@ -1,8 +1,7 @@
 <script>
-    import '$lib/styles/app.css'
-    import '$lib/styles/fonts.css'
+	import '$lib/styles/app.css';
+	import '$lib/styles/fonts.css';
 </script>
-
 
 <svelte:head>
 	<meta charset="utf-8" />
@@ -16,14 +15,13 @@
 </svelte:head>
 
 <div class="site-container">
-    <slot />
+	<slot />
 </div>
 
-
 <style>
-    .site-container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.site-container {
+		max-width: 1200px;
+		margin-left: var(--site-container-margin);
+		margin-right: var(--site-container-margin);
+	}
 </style>

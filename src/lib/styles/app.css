@@ -1,13 +1,95 @@
 :root {
     --color-background: #1F1F1F;
     --color-white-primary: #E3E3E3;
-    --color-dark-secondary: #2D2F31;
+    --color-dark-secondary: #404040;
     --transition-nav: all 0.75s cubic-bezier(0.45, 0, 0.55, 1);
+
+    --site-container-margin: auto;
+    --main-screen-padding: 5.6rem;
+    --main-screen-row-gap: 10rem;
+    --footer-row-gap: 2.4rem;
+
+    --nav-button-size: 80px;
+    --nav-button-radius: 20px;
+    --nav-button-left: calc(50vw + 644px);
+    --nav-button-bottom: var(--main-screen-padding);
+
+    --lang-switch-size: 72px;
+
+    --feature-title-text-size: 7.2rem;
+    --feature-desc-text-size: 2rem;
+    --feature-desc-line-height: 130%;
+    --feature-desc-text-width: 82%;
+    --feature-title-gap: 3.2rem;
+    --feature-card-padding-top: 8%;
+    --feature-card-padding-bottom: 16%;
+    --feature-card-padding-side: 3.6rem;
+    --feature-display-mobile: none;
+    --feature-display: block;
+    --feature-external-icon-size: 32px;
+    --feature-external-icon-top: 3.2rem;
+    --feature-external-icon-right: 3.6rem;
+
     box-sizing: border-box;
     font-size: 62.5%;
 
     scrollbar-color: var(--color-dark-secondary) var(--color-background);
     scrollbar-width: auto;
+}
+
+@media (max-width: 1232px) {
+    :root {
+        --site-container-margin: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --feature-title-text-size: 3.6rem;
+        --feature-desc-text-size: 1.6rem;
+        --feature-desc-text-width: 82%;
+        --feature-title-gap: 2rem;
+        --feature-card-padding-top: 4%;
+        --feature-card-padding-bottom: 20%;
+        --feature-card-padding-side: 2.4rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    :root {
+        --nav-button-left: calc(100vw - 112px);
+        --nav-button-bottom: var(--main-screen-padding);
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --main-screen-padding: 2.4rem;
+        --main-screen-row-gap: 3.2rem;
+        --site-container-margin: 12px;
+        --footer-row-gap: 0.8rem;
+
+        --nav-button-size: 60px;
+        --nav-button-radius: 16px;
+        --nav-button-left: calc(100vw - 60px - 18px);
+        --nav-button-bottom: var(--main-screen-padding);
+
+        --lang-switch-size: 56px;
+
+        --feature-display-mobile: block;
+        --feature-display: none;
+        --feature-title-text-size: 2rem;
+        --feature-desc-text-size: 1.2rem;
+        --feature-desc-line-height: 135%;
+        --feature-desc-text-width: 100%;
+        --feature-title-gap: 0.4rem;
+        --feature-card-padding-top: 8%;
+        --feature-card-padding-bottom: 32%;
+        --feature-card-padding-side: 1.6rem;
+        --feature-external-icon-size: 16px;
+        --feature-external-icon-top: 1.2rem;
+        --feature-external-icon-right: 1.2rem;
+    }
 }
 
 ::-webkit-scrollbar {

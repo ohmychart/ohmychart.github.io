@@ -17,7 +17,7 @@
 	}
 
     .email {
-        margin-top: 2.4rem;
+        margin-top: var(--footer-row-gap);
     }
 
 </style>
