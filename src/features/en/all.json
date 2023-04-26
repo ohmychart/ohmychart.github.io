@@ -3,7 +3,7 @@
         "title": "Sports leagues business",
         "slug": "sports-leagues-business",
         "color": "#013D72",
-        "desc": "",
+        "desc": "Professional sports leagues around the world generate massive amounts of revenue every year. From football to basketball, American football, and beyond, these organizations create billions of dollars in global revenue. This infographic based on the top 100 highest-earning leagues visualizes their revenue stream, highlighting the top performers and showcasing the scale of their operations.",
         "tags": ["Sports", "Business"],
         "isStatic": true
     },
@@ -12,8 +12,9 @@
         "title": "Energy resources and state fragility",
         "slug": "energy-resources-and-state-fragility",
         "color": "#00796A",
-        "desc": "",
+        "desc": "This infographic shows that almost half of the world's proven fossil energy reserves like oil and gas is held by countries classified in the warning category of the Fragile State Index, which measures a state’s vulnerability to collapse or conflict.",
         "tags": ["Energy", "Economy"],
         "isStatic": true
     }
 ]
+

@@ -7,7 +7,7 @@
 <section class="features-feed">
 	{#each features as feature}
 		{#if feature.isStatic}
-			<StaticFeature slug={feature.slug} --ambi-color="{feature.color}"/>
+			<StaticFeature slug={feature.slug} desc={feature.desc} --ambi-color="{feature.color}"/>
 		{:else}
 			<InteractiveFeatureCard title={feature.title} desc={feature.desc} slug={feature.slug} url={feature.url} color={feature.color}/>
 		{/if}

@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	import SettingsStore from '$lib/stores/settings';
 
 	import Logo from '$lib/components/Logo.svelte';
@@ -14,11 +15,11 @@
 
 	<div class="lang-switch">
 		{#if $SettingsStore.lang === 'ru' }
-			<a href="/en" title="In English" aria-description="English version">
+			<a data-sveltekit-reload href="/en" title="In English" aria-description="English version">
 				{@html langSwitchRu}
 			</a>
 		{:else}
-			<a href="/" title="На русском" aria-description="Версия на русском языке">
+			<a data-sveltekit-reload href="/" title="На русском" aria-description="Версия на русском языке">
 				{@html langSwitchEn}
 			</a>
 		{/if}
