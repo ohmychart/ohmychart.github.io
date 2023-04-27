@@ -21,5 +21,5 @@
 
 <MainScreen features={data.features} />
 <NavButton />
-<NavScreen />
+<NavScreen features={data.features} />
 

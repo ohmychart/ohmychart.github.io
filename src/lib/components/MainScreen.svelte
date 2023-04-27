@@ -24,7 +24,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		row-gap: var(--main-screen-row-gap);
-		transition: var(--transition-nav);
+		transition: var(--transition-main-screen);
 	}
 
 	.main-screen.hide {

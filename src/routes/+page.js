@@ -1,7 +1,7 @@
-import features from '../features/ru/all.json';
+import { loadAppData } from '$lib/utils/data-load-utils';
 
-export const load = async(lf) => {
-    return {
-        features
-    }
+export const load = async() => {
+    const appData = loadAppData('ru');
+
+    return appData;
 }

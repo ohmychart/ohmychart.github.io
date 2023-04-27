@@ -2,7 +2,8 @@
     --color-background: #1F1F1F;
     --color-white-primary: #E3E3E3;
     --color-dark-secondary: #404040;
-    --transition-nav: all 0.75s cubic-bezier(0.45, 0, 0.55, 1);
+    --transition-nav: top 0.75s cubic-bezier(0.45, 0, 0.55, 1);
+    --transition-main-screen: all 0.75s cubic-bezier(0.45, 0, 0.55, 1);
 
     --site-container-margin: auto;
     --main-screen-padding: 5.6rem;
@@ -17,6 +18,7 @@
     --lang-switch-size: 72px;
 
     --feature-title-text-size: 7.2rem;
+    --feature-title-text-weight: 700;
     --feature-desc-text-size: 2rem;
     --feature-desc-line-height: 130%;
     --feature-desc-text-width: 82%;
@@ -30,8 +32,11 @@
     --feature-external-icon-top: 3.2rem;
     --feature-external-icon-right: 3.6rem;
 
+    --feature-screen-header-gap: 5.6rem;
+
     box-sizing: border-box;
     font-size: 62.5%;
+    font-weight: 400;
 
     scrollbar-color: var(--color-dark-secondary) var(--color-background);
     scrollbar-width: auto;
@@ -52,6 +57,8 @@
         --feature-card-padding-top: 4%;
         --feature-card-padding-bottom: 20%;
         --feature-card-padding-side: 2.4rem;
+
+        --feature-screen-header-gap: 2.8rem;
     }
 }
 
@@ -89,6 +96,8 @@
         --feature-external-icon-size: 16px;
         --feature-external-icon-top: 1.2rem;
         --feature-external-icon-right: 1.2rem;
+
+        --feature-screen-header-gap: 1.6rem;
     }
 }
 

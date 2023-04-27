@@ -15,11 +15,11 @@
 
 	<div class="lang-switch">
 		{#if $SettingsStore.lang === 'ru' }
-			<a data-sveltekit-reload href="/en" title="In English" aria-description="English version">
+			<a data-sveltekit-reload href="/en" title="OhMyChart! in English" aria-description="English version">
 				{@html langSwitchRu}
 			</a>
 		{:else}
-			<a data-sveltekit-reload href="/" title="На русском" aria-description="Версия на русском языке">
+			<a data-sveltekit-reload href="/" title="OhMyChart! на русском" aria-description="Версия на русском языке">
 				{@html langSwitchEn}
 			</a>
 		{/if}

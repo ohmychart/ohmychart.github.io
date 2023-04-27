@@ -48,6 +48,7 @@
 	.title {
 		font-size: var(--feature-title-text-size);
 		line-height: 100%;
+		font-weight: var(--feature-title-text-weight);
 	}
 
 	.description {

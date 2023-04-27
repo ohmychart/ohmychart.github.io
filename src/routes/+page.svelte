@@ -17,6 +17,6 @@
 	/>
 </svelte:head>
 
-<MainScreen lang="ru" features={data.features} />
+<MainScreen features={data.features} />
 <NavButton />
-<NavScreen />
+<NavScreen features={data.features} />
