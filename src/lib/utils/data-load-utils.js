@@ -6,25 +6,9 @@ const ALL_FEATURES = {
     'ru': featuresRu,
 }
 
-export function loadStaticFeature(featureSlug, featureLang) {
-    const features = ALL_FEATURES[featureLang];
-    const post = features.find(feature => feature.slug === featureSlug);
-    const { staticTitle: title, staticDesc: intro, desc, slug, color} = post;
-
-    return {
-        title,
-        intro,
-        desc,
-        slug,
-        color
-    };
-}
-
 export function loadAppData(lang, slug) {
     const features = ALL_FEATURES[lang];
     const featureIdx = slug ? features.findIndex(feature => feature.slug === slug) : undefined;
-
-    console.log(slug, featureIdx)
 
     let currentFeature = {};
 

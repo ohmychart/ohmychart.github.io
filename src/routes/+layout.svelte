@@ -1,6 +1,10 @@
 <script>
+	import { dev } from '$app/environment';
+
 	import '$lib/styles/app.css';
 	import '$lib/styles/fonts.css';
+
+	import GoogleAnalytics from '$lib/components/GoogleAnalytics.svelte';
 </script>
 
 <svelte:head>
@@ -13,6 +17,10 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 	<link rel="manifest" href="/site.webmanifest" />
 </svelte:head>
+
+{#if !dev}
+	<GoogleAnalytics />
+{/if}
 
 <div class="site-container">
 	<slot />

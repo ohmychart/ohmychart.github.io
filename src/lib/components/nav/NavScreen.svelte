@@ -1,5 +1,6 @@
 <script>
 	import SettingsStore from '$lib/stores/settings';
+	import NavFeatureCard from '$lib/components/nav/NavFeatureCard.svelte';
 
 	export let features;
 </script>
@@ -18,10 +19,11 @@
 <aside>
 	<nav class="nav-screen" class:show={$SettingsStore.showNav}>
         <div class="nav-container">
-            <p>Navigation</p>
             <ul class="nav-features">
-                {#each {length: 12} as feature}
-                    <li>{feature}</li>
+                {#each features as feature}
+                    <li>
+						<NavFeatureCard {feature} />
+					</li>
                 {/each}
             </ul>
 
@@ -50,10 +52,15 @@
 		max-width: 1200px;
 		margin-left: var(--site-container-margin);
 		margin-right: var(--site-container-margin);
+		padding-top: var(--main-screen-padding);
+		padding-bottom: var(--main-screen-padding);
     }
 
     .nav-features {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+		list-style: none;
+		grid-column-gap: 3.6rem;
+		grid-row-gap: 4rem;
     }
 </style>
