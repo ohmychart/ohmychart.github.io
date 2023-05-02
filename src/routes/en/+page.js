@@ -5,3 +5,5 @@ export const load = async() => {
 
     return appData;
 }
+
+export const prerender = true;

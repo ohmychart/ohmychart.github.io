@@ -6,3 +6,5 @@ export const load = async({params}) => {
 
     return appData;
 }
+
+export const prerender = true;
