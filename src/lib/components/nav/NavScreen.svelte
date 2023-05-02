@@ -58,9 +58,9 @@
 
     .nav-features {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: var(--nav-screen-columns);
 		list-style: none;
-		grid-column-gap: 3.6rem;
-		grid-row-gap: 4rem;
+		grid-column-gap: var(--nav-screen-columns-gap);
+		grid-row-gap: var(--nav-screen-rows-gap);
     }
 </style>
