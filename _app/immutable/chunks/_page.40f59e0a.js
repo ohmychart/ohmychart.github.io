@@ -1,0 +1,1 @@
+import{l as a}from"./data-load-utils.48ecd1e7.js";const e=async()=>a("en"),t=!0,p=Object.freeze(Object.defineProperty({__proto__:null,load:e,prerender:t},Symbol.toStringTag,{value:"Module"}));export{p as _,e as l,t as p};

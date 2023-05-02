@@ -1,0 +1,1 @@
+import{l as t}from"./data-load-utils.48ecd1e7.js";const r=async({params:e})=>{const o=t("ru",e.slug);return console.log(e.slug),o},a=!0,n=Object.freeze(Object.defineProperty({__proto__:null,load:r,prerender:a},Symbol.toStringTag,{value:"Module"}));export{n as _,r as l,a as p};
